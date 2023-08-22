@@ -1,0 +1,12 @@
+type User @model {
+  name: String!
+  profileUrl: URL! @unique
+  email: Email! @unique
+  notes: [Note]
+}
+
+type Note @model {
+  name: String!
+  description: String!
+  owner: User
+}
