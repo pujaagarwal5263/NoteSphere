@@ -8,5 +8,6 @@ type User @model {
 type Note @model {
   name: String!
   description: String!
+  priority: String!
   owner: User
 }
